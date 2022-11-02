@@ -1,6 +1,23 @@
-const Home = () =>{
-    return(
-        <h1>welome to home page</h1>
-    )
-}
+const Home = () => {
+  return (
+    <div className="hero py-16 ">
+      <div className="container mx-auto flex items-center justify-between">
+        <div className="w-1/2">
+          <h5 className="text-lg ">
+            <em>Are you hungry</em>
+          </h5>
+          <h1 className="text-2xl md:text-4xl font-bold">
+            Order from Rec Canteen
+          </h1>
+          <button className="px-6 py-2 rounded-full text-white font-bold mt-4 bg-yellow-500 hover:bg-yellow-600">
+            order now
+          </button>
+        </div>
+        <div className="w-1/2">
+            <img src="/images/pizza.png" alt="trec" />
+        </div>
+      </div>
+    </div>
+  );
+};
 export default Home;
